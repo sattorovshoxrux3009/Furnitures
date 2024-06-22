@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+html{
+    user-select: none;
+    font-family: Poppins,sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 400;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 2000px;
+    // border: 1px solid black;
+}
+$white-color: #FFF;
+$primary-color:#1E1E1E;
+$secondary-color:#E58411;

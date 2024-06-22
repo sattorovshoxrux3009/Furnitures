@@ -1,0 +1,194 @@
+$white-color: #FFF;
+$primary-color:#1E1E1E;
+$secondary-color:#E58411;
+.main{
+    background: url(../../img/main-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-height: 1084px;
+    padding-bottom: 250px;
+    padding-top: 150px;
+    width: 100vw ;
+    @media screen and (max-width:525px) {
+       padding-top: 100px;
+    }
+    .container{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    h1{
+        color: $white-color;
+        font-size: 3.5rem;
+        max-width:  800px;
+        text-align: center;
+        @media screen and (max-width:768px) {
+            font-size: 2.5rem;
+        }
+        @media screen and (max-width:525px) {
+            font-size: 2rem;
+        }
+    }
+    h3{
+        color: $white-color;
+        font-size: 1.5rem;
+        max-width: 650px;
+        text-align: center;
+        padding: 40px 0px ;
+        opacity: 0.8;
+        @media screen and (max-width:768px) {
+            font-size: 1rem;
+            max-width: 500px;
+        }
+
+    }
+}
+form{
+    position: relative;
+    input{
+        width: 300px;
+        padding: 8px 8px 8px 20px;
+        border-radius: 42px;
+        border: 0.862px solid rgba(255, 255, 255, 0.60);
+        background: rgba(255, 255, 255, 0.15);
+        font-size: 1.125rem;
+        backdrop-filter: blur(4px);    
+        color: $white-color;
+        &::placeholder{
+            color: $white-color;
+        }
+        @media screen and (max-width:425px) {
+            letter-spacing: 2px;
+        }
+    }
+    button{
+        position: absolute;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        top: 3px;
+        right: 5px;
+        border: none;
+    }
+}
+.main-search{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main-list{
+        padding-bottom: 15px;
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: space-evenly;
+        width: 100%;
+        @media screen and (max-width:475px) {
+           justify-content: center;
+           gap: 10px;
+        }
+    }
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width:475px) {
+            padding: 5px 0;
+         }
+    }
+    .furniture-add-btn{
+        color: white;
+        font-size: 18px;
+        background-color: #1E1E1E;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+    .furniture-img{
+        width: 150px;
+        height: 170px;
+        @media screen and (max-width:475px) {
+            width: 100%;
+            height: 35vw ;
+        }
+        @media screen and (max-width:400px) {
+            width: 60%;
+        }
+    }
+    h2{
+        text-transform: capitalize;
+        font-size: 1rem;
+        @media screen and (max-width:475px) {
+            font-size: 0.75rem;    
+        }
+    }
+    h1{
+        font-size: 1.5rem;
+        @media screen and (max-width:475px) {
+            font-size: 1rem;    
+        }
+        &:nth-child(1){
+            font-size: 2rem;
+            padding: 10px 0;
+            @media screen and (max-width:475px) {
+                font-size: 1.5rem;    
+             }
+        }
+    }
+    .search-item{
+        padding: 10px;
+        width: 200px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        border-radius: 15px;
+        @media screen and (max-width:475px) {
+            width: 45%;
+            padding: 20px;
+        }
+        @media screen and (max-width:400px) {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+    .container{
+        position: relative;
+        width: 850px;
+        height: 650px;
+        border-radius: 35px;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (max-width:900px) {
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+    }
+    .furniture-button{
+        @media screen and (max-width:475px) {
+            font-size: 0.75rem ;
+            width: 20px;
+        }
+    }
+}
+.close-btn{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    @media screen and (max-width:400px) {
+        width: 25px;
+        height: 25px;
+    }
+}
